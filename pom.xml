@@ -60,6 +60,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>server</finalName>
+		<finalName>simplegit</finalName>
 	</build>
 </project>

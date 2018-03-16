@@ -10,12 +10,10 @@ import com.simplegit.server.controller.CoreController;
 
 public class MainTest {
 
-	
-
 	@Test
-	public void gitStatus() throws IOException {	
-		CoreController coreController=new CoreController();
-		Process pr = coreController.executeCommand("git status");
+	public void gitStatus() throws IOException {
+		CoreController coreController = new CoreController();
+		Process pr = coreController.executeGitCommand("git status");
 		BufferedReader br = new BufferedReader(new InputStreamReader(pr.getInputStream()));
 		String line;
 		System.out.println("Output:");
