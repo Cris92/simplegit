@@ -17,7 +17,6 @@ public class MainTest {
 		CoreController coreController=new CoreController();
 		Process pr = coreController.executeCommand("git status");
 		BufferedReader br = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-		StringBuffer sb = new StringBuffer();
 		String line;
 		System.out.println("Output:");
 		while ((line = br.readLine()) != null) {
