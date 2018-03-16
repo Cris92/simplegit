@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.raspberrymusic.rest", "com.raspberrymusic.controller" })
+@ComponentScan(basePackages = { "com.simplegit.server.controller" })
 public class AppConfiguration extends WebMvcConfigurerAdapter {
 	private Logger logger = Logger.getLogger(this.getClass());
 
